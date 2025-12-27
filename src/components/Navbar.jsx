@@ -62,7 +62,7 @@ export const Navbar = () => {
 
           {/* Botón Reservar */}
           <a
-            href="/reservacion"
+            href="https://wa.me/524151395556"
             className="
               ml-3 px-4 py-2 text-sm rounded-full shadow-md
               bg-[#B0493B] text-white

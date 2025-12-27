@@ -230,12 +230,12 @@ export const Inicio = () => {
 
                                         {/* CTA */}
                                         <Link
-    to="/galeria"
-    className="inline-flex items-center gap-2 text-[#B0493B] font-medium border border-[#B0493B] px-6 py-3 rounded-full hover:bg-[#B0493B] hover:text-white transition"
->
-    Ver detalles
-    <span className="text-lg">→</span>
-</Link>
+                                            to="/galeria"
+                                            className="inline-flex items-center gap-2 text-[#B0493B] font-medium border border-[#B0493B] px-6 py-3 rounded-full hover:bg-[#B0493B] hover:text-white transition"
+                                        >
+                                            Ver detalles
+                                            <span className="text-lg">→</span>
+                                        </Link>
                                     </div>
                                 </motion.article>
                             );
