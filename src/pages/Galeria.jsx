@@ -53,47 +53,60 @@ export const Galeria = () => {
             <Navbar />
 
             {/* HERO */}
-            <section className="relative h-[65vh] flex items-center justify-center bg-[#B0493B]">
+            <section className="relative h-[65vh] flex items-center justify-center bg-gradient-to-br from-[#B0493B] to-[#8f3c31] overflow-hidden">
+                {/* Detalle decorativo */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.12),transparent_60%)]"></div>
+
                 <motion.div
-                    initial={{ opacity: 0, y: 25 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-center text-white px-6"
+                    transition={{ duration: 0.9, ease: "easeOut" }}
+                    className="relative text-center text-white px-6 max-w-3xl"
                 >
-                    <h1 className="text-4xl md:text-5xl font-semibold mb-4">
+                    <h1 className="text-4xl md:text-5xl font-semibold mb-6 tracking-wide">
                         Nuestras Instalaciones
                     </h1>
-                    <p className="max-w-2xl mx-auto text-white/90 text-lg">
-                        Espacios con esencia colonial, diseñados para brindarte una estancia
-                        cómoda, segura y auténtica en el corazón de San Miguel de Allende.
+
+                    <p className="text-white/90 text-lg leading-relaxed">
+                        Un espacio donde la arquitectura colonial, el confort esencial y la
+                        atención personalizada se combinan para ofrecerte una estancia
+                        auténtica y tranquila en el corazón de San Miguel de Allende.
                     </p>
                 </motion.div>
             </section>
 
             {/* INFO GENERAL */}
-            <section className="max-w-6xl mx-auto px-6 py-20 text-center">
+            <section className="max-w-6xl mx-auto px-6 py-24 text-center">
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.6 }}
+                    initial={{ opacity: 0, y: 15 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
                     className="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto"
                 >
                     En Casa Ttorrez cuidamos cada detalle para que tu experiencia sea
-                    placentera. Nuestro hospedaje combina arquitectura colonial,
-                    funcionalidad y servicios esenciales, manteniendo un equilibrio entre
-                    confort, ubicación y precio.
+                    cómoda y agradable. Nuestro hospedaje conserva elementos
+                    arquitectónicos tradicionales —como techos de bóveda tipo cañón—
+                    integrados con servicios funcionales que garantizan descanso,
+                    seguridad y una excelente ubicación, manteniendo una relación
+                    equilibrada entre calidad y precio.
                 </motion.p>
             </section>
 
             {/* SERVICIOS HABITACIONES */}
-            <section className="bg-gray-50 py-20">
+            <section className="bg-gray-50 py-24">
                 <div className="max-w-6xl mx-auto px-6">
-                    <h2 className="text-3xl font-semibold text-[#B0493B] text-center mb-14">
-                        Servicios en cada habitación
-                    </h2>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="text-3xl font-semibold text-[#B0493B] text-center mb-16"
+                    >
+                        Servicios incluidos en cada habitación
+                    </motion.h2>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
                         {[
                             { icon: Bath, text: "Baño privado" },
                             { icon: BedDouble, text: "Ropa de cama y toallas" },
@@ -101,7 +114,7 @@ export const Galeria = () => {
                             { icon: Wifi, text: "Wi-Fi gratuito" },
                             { icon: Droplets, text: "Agua caliente" },
                             { icon: ShieldCheck, text: "Acceso vigilado" },
-                            { icon: ParkingSquare, text: "Estacionamiento (según disponibilidad)" },
+                            { icon: ParkingSquare, text: "Estacionamiento disponible" },
                             { icon: Users, text: "Atención personalizada" },
                         ].map((item, i) => (
                             <motion.div
@@ -110,10 +123,14 @@ export const Galeria = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: i * 0.08 }}
                                 viewport={{ once: true }}
-                                className="flex flex-col items-center text-center gap-3"
+                                className="flex flex-col items-center text-center gap-4"
                             >
-                                <item.icon size={36} className="text-[#B0493B]" />
-                                <span className="text-gray-700 text-sm">{item.text}</span>
+                                <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-sm">
+                                    <item.icon size={28} className="text-[#B0493B]" />
+                                </div>
+                                <span className="text-gray-700 text-sm font-medium">
+                                    {item.text}
+                                </span>
                             </motion.div>
                         ))}
                     </div>
@@ -121,28 +138,50 @@ export const Galeria = () => {
             </section>
 
             {/* ÁREAS COMUNES */}
-            <section className="py-20 max-w-6xl mx-auto px-6 text-center">
-                <h2 className="text-3xl font-semibold text-[#B0493B] mb-6">
+            <section className="py-24 max-w-6xl mx-auto px-6 text-center">
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="text-3xl font-semibold text-[#B0493B] mb-6"
+                >
                     Áreas comunes
-                </h2>
+                </motion.h2>
 
-                <p className="text-gray-700 max-w-3xl mx-auto text-lg mb-10">
-                    Contamos con espacios compartidos pensados para el descanso y la
-                    convivencia, disponibles para todos nuestros huéspedes.
-                </p>
+                <motion.p
+                    initial={{ opacity: 0, y: 15 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 }}
+                    viewport={{ once: true }}
+                    className="text-gray-700 max-w-3xl mx-auto text-lg mb-12"
+                >
+                    Nuestros espacios compartidos están pensados para brindar comodidad y
+                    convivencia, permitiendo a los huéspedes disfrutar de un ambiente
+                    relajado durante su estancia.
+                </motion.p>
 
                 <div className="flex flex-wrap justify-center gap-6 text-gray-700">
-                    <span className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full">
-                        <Home size={18} /> Cocina compartida
-                    </span>
-                    <span className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full">
-                        <Home size={18} /> Comedor
-                    </span>
-                    <span className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full">
-                        <Home size={18} /> 2 Salas de estar
-                    </span>
+                    {[
+                        "Cocina compartida",
+                        "Comedor",
+                        "Dos salas de estar"
+                    ].map((text, i) => (
+                        <motion.span
+                            key={i}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: i * 0.1 }}
+                            viewport={{ once: true }}
+                            className="flex items-center gap-2 bg-gray-100 px-6 py-3 rounded-full shadow-sm"
+                        >
+                            <Home size={18} />
+                            {text}
+                        </motion.span>
+                    ))}
                 </div>
             </section>
+
 
             {/* GALERÍA COLLAGE */}
             <h2 className="text-3xl font-semibold text-[#B0493B] text-center mb-14">
@@ -166,7 +205,7 @@ export const Galeria = () => {
                     ))}
                 </Masonry>
             </ResponsiveMasonry>
-            
+
             {/* NOTA */}
             <section className="bg-gray-50 py-16 text-center px-6">
                 <p className="text-gray-600 max-w-4xl mx-auto text-sm leading-relaxed">
