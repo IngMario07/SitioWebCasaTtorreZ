@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   const links = [
     { ruta: "/inicio", titulo: "Inicio" },
-    { ruta: "/galeria", titulo: "Habitaciones" },
+    { ruta: "/galeria", titulo: "Instalaciones" },
     { ruta: "/nosotros", titulo: "Nuestra Historia" },
     { ruta: "/servicios", titulo: "Servicios" },
     { ruta: "/contacto", titulo: "Contacto" },
