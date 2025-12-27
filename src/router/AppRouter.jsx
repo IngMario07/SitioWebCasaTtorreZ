@@ -6,9 +6,12 @@ import { Nosotros } from "../pages/Nosotros"
 import { Reservacion } from "../pages/Reservacion"
 import { Servicios } from "../pages/Servicios"
 
+import { ScrollToTop } from "../components/ScrollToTop";
+
 export const AppRouter = () => {
   return(
     <>
+    <ScrollToTop />
         <Routes>
           <Route path="/*" element={<Inicio />} />
           <Route path="/contacto" element={<Contacto />} />
