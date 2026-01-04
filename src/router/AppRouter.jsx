@@ -5,6 +5,7 @@ import { Galeria } from "../pages/Galeria"
 import { Nosotros } from "../pages/Nosotros"
 import { Reservacion } from "../pages/Reservacion"
 import { Servicios } from "../pages/Servicios"
+import { Terminos } from "../pages/Terminos"
 
 import { ScrollToTop } from "../components/ScrollToTop";
 
@@ -19,6 +20,7 @@ export const AppRouter = () => {
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/reservacion" element={<Reservacion />} />
           <Route path="/servicios" element={<Servicios />} />
+          <Route path="/terminos" element={<Terminos />} />
         </Routes>
     </>
   )

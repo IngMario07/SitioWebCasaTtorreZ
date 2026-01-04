@@ -139,9 +139,18 @@ export const Footer = () => {
             <div className="w-[90%] mx-auto h-[1px] bg-white/40 mt-10 mb-5"></div>
 
             {/* COPYRIGHT */}
-            <p className="text-center text-white/80 text-sm">
-                © {new Date().getFullYear()} Casa Ttorrez — Todos los derechos reservados.
-            </p>
+            <div className="text-center text-white/80 text-sm space-y-2">
+                <p>
+                    © {new Date().getFullYear()} Casa Ttorrez — Todos los derechos reservados.
+                </p>
+
+                <a
+                    href="/terminos"
+                    className="underline hover:text-yellow-200 transition text-xs"
+                >
+                    Términos y Condiciones
+                </a>
+            </div>
 
         </footer>
     );
