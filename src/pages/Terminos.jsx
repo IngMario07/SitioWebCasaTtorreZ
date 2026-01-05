@@ -192,7 +192,10 @@ export const Terminos = () => {
               Términos y Condiciones.
             </p>
             <p className="mt-4 font-medium text-[#B0493B]">
-              Será un gusto recibirte. ¡Gracias por reservar con nosotros!
+              Será un gusto recibirte.
+            </p>
+            <p className="mt-4 font-medium text-[#B0493B]">
+              ¡Gracias por reservar con nosotros!
             </p>
           </div>
 
