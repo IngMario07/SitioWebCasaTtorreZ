@@ -62,6 +62,7 @@ export const Inicio = () => {
                 <img
                     src={banner}
                     alt="Hotel Casa Ttorrez"
+                    loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
 
@@ -174,6 +175,7 @@ export const Inicio = () => {
                                         <img
                                             src={hab.imagenes[current]}
                                             alt={hab.nombre}
+                                            loading="lazy"
                                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         />
 
@@ -289,6 +291,7 @@ export const Inicio = () => {
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQaXkdtkvlTpDiPo0uHyuaaUN_u9XbZ_CbJg&s.svg"
                                 alt="Airbnb"
+                                loading="lazy"
                                 className="h-8"
                             />
                             <span className="font-medium">Reservar en Airbnb</span>
@@ -307,6 +310,7 @@ export const Inicio = () => {
                             <img
                                 src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
                                 alt="WhatsApp"
+                                loading="lazy"
                                 className="h-10"
                             />
                             <span className="font-medium">Reserva directa</span>
@@ -328,6 +332,7 @@ export const Inicio = () => {
                             <img
                                 src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Booking.com_Icon_2022.svg"
                                 alt="Booking"
+                                loading="lazy"
                                 className="h-8"
                             />
                             <span className="font-medium">Reservar en Booking</span>
