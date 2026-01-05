@@ -101,6 +101,7 @@ export const Servicios = () => {
                             key={i}
                             src={img}
                             alt="Salas de estar Casa Ttorrez"
+                            loading="lazy"
                             className="rounded-2xl shadow-md object-cover w-full h-[280px]"
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
@@ -130,6 +131,7 @@ export const Servicios = () => {
                                 key={i}
                                 src={img}
                                 alt="Cocina Casa Ttorrez"
+                                loading="lazy"
                                 className="rounded-2xl shadow-md object-cover w-full h-[280px]"
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
@@ -159,6 +161,7 @@ export const Servicios = () => {
                             key={i}
                             src={img}
                             alt="Estacionamiento Casa Ttorrez"
+                            loading="lazy"
                             className="rounded-2xl shadow-md object-cover w-full h-[280px]"
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
