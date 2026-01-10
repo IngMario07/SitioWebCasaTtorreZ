@@ -56,14 +56,14 @@ export const Inicio = () => {
             <Navbar />
 
             {/* HERO */}
-            <section className="relative h-[75vh] md:h-[90vh] w-full">
+            <section className="relative h-[45vh] md:h-[90vh] w-full">
 
                 {/* Imagen */}
                 <img
                     src={banner}
                     alt="Hotel Casa Ttorrez"
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
                 />
 
                 {/* Overlay oscuro para legibilidad */}
