@@ -117,7 +117,7 @@ export const Footer = () => {
                     {/* Email */}
                     <div className="flex items-start gap-2 text-white/90">
                         <Mail size={22} className="flex-shrink-0 mt-1" />
-                        <span>info@casatorrez.com</span>
+                        <span>casattorrez@gmail.com</span>
                     </div>
                 </div>
 
