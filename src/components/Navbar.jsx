@@ -111,10 +111,9 @@ export const Navbar = () => {
                 `
                 w-[85%] text-center py-3 rounded-xl text-lg font-semibold
                 transition-all
-                ${
-                  isActive
-                    ? "bg-[#B0493B] text-white shadow-md"
-                    : "bg-white/50 text-[#3A3A3A] border border-[rgba(0,0,0,0.1)] hover:bg-white/70"
+                ${isActive
+                  ? "bg-[#B0493B] text-white shadow-md"
+                  : "bg-white/50 text-[#3A3A3A] border border-[rgba(0,0,0,0.1)] hover:bg-white/70"
                 }
               `
               }
@@ -124,12 +123,14 @@ export const Navbar = () => {
           ))}
 
           <a
-            href="/reservacion"
+            href="https://wa.me/524151395556?text=Hola,%20quiero%20hacer%20una%20reservación"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
             className="
-              mt-5 w-[85%] text-center py-3 rounded-xl 
-              bg-[#B0493B] text-white font-bold text-lg shadow-md
-            "
+    mt-5 w-[85%] text-center py-3 rounded-xl 
+    bg-[#B0493B] text-white font-bold text-lg shadow-md
+  "
           >
             Reservar
           </a>
